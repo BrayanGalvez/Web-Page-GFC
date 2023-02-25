@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <title>Green Forest Co</title>
+    <style>
+        :root{
+            --backg-white-color: aliceblue;
+            --tamano-txt-peque: 14px;
+            --tamano-txt-med: 16px;
+            --tamano-txt-grande: 20px;
+            --tamano-txt-extra:70px;
+
+        }
+        body{
+            background: #6A9113;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: 'Bebas Neue', cursive;
+        }
+        .header{
+            color: var(--backg-white-color);
+            margin: 20px;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+        .header img{
+            width: 50px;
+            height: 50px;
+            color: azure;
+            background-repeat: no-repeat;
+        }
+        .header nav{
+            padding: 15px;
+            font-size: var(--tamano-txt-grande);
+            color: aliceblue;
+        }
+        .header nav a{
+            text-decoration: none;
+            color: var(--backg-white-color);
+        }
+        .header nav a:hover{
+            color: greenyellow;
+            cursor: pointer;
+        }
+        
+
+
+        .container{
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        padding: 5px;
+        }
+
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul.slider{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        }
+
+        ul.slider li {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            transition: opacity .5s;
+            background: #6A9113;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        ul.slider li img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        }
+
+        ul.slider li:first-child {
+            opacity: 1; /*Mostramos el primer <li>*/
+        }
+
+        ul.slider li:target {
+            opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+        }
+
+        .menu{
+        text-align: center;
+        margin: 20px;
+        }
+
+        .menu li{
+        display: inline-block;
+        text-align: center;
+        }
+
+        .menu li a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 100%;
+        }
+
+        h1{
+            text-align: center;
+            color: var(--backg-white-color);
+            font-size: var(--tamano-txt-extra);
+            margin: 10px;
+        }
+        p{
+            color: var(--backg-white-color);
+            font-size: var(--tamano-txt-grande);
+            margin: 0px 40px 0px;
+        }
+        label{
+            color: var(--backg-white-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+      <a href="index.html"><img src="/html/img/Diseño_sin_título__6_-removebg-preview.png" alt="logo gree forest co" ></a>
+        <nav><a href="/html/servicios.html">Servicios</a></nav>
+        <nav><a href="/html/aboutus.html">Sobre Nosotros</a></nav>
+        <nav><a href="/html/contacto.html">Contacto</a></nav>
+    </header>
+    <div>
+        <h1>Contacto</h1>
+    </div>
+    <div>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre">
+        <label for="Correo">Correo</label>
+        <input type="email" name="Correo" id="Correo">
+    </div>
+
+</body>
+</html>
